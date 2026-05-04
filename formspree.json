@@ -1,0 +1,15 @@
+{
+  "forms": {
+    "mlgzbdlp": {
+      "name": "Prestige Detailing Booking Form",
+      "actions": [
+        {
+          "type": "autoresponse",
+          "fromName": "Prestige Mobile Detailing",
+          "subject": "We received your detailing request",
+          "message": "Thank you for contacting Prestige Mobile Detailing. We received your request and will contact you soon to confirm your date, time, service, and final price."
+        }
+      ]
+    }
+  }
+}
