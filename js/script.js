@@ -80,6 +80,9 @@ const packageData = {
       document.getElementById("sumAddons").textContent = "$" + addonTotal;
       document.getElementById("sumDuration").textContent = duration;
       document.getElementById("sumTotal").textContent = "$" + total;
+      document.getElementById("hiddenTotal").value = "$" + total;
+      document.getElementById("hiddenDuration").value = duration;
+      document.getElementById("hiddenAddonTotal").value = "$" + addonTotal;
     }
 
     function bookService(event) {
