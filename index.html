@@ -283,9 +283,9 @@
         </div>
 
         <div class="quote-card">
-          <form oninput="updateQuote()" onsubmit="bookService(event)">
+          <form action="https://formspree.io/f/mlgzbdlp" method="POST" oninput="updateQuote()">
             <label>Vehicle Type</label>
-            <select id="vehicle">
+            <select id="vehicle" name="Vehicle Type">
               <option value="">Select vehicle</option>
               <option value="Sedan">Sedan</option>
               <option value="SUV">SUV</option>
@@ -296,7 +296,7 @@
             </select>
 
             <label>Service Package</label>
-            <select id="package">
+            <select id="package" name="Service Package">
               <option value="">Select package</option>
               <option value="Basic Package">Basic Package</option>
               <option value="Basic Interior Package">Basic Interior Package</option>
@@ -307,41 +307,41 @@
 
             <label>Add-Ons</label>
             <div class="addon">
-              <input type="checkbox" value="Pet Hair Removal" data-price="25">
+              <input type="checkbox" name="Add Ons" value="Pet Hair Removal" data-price="25">
               <span>Pet Hair Removal - $25<br><small>Extra removal for seats and carpets.</small></span>
             </div>
             <div class="addon">
-              <input type="checkbox" value="Stain Treatment" data-price="30">
+              <input type="checkbox" name="Add Ons" value="Stain Treatment" data-price="30">
               <span>Stain Treatment - $30<br><small>Helps clean tougher stains.</small></span>
             </div>
             <div class="addon">
-              <input type="checkbox" value="Wax Protection" data-price="40">
+              <input type="checkbox" name="Add Ons" value="Wax Protection" data-price="40">
               <span>Wax Protection - $40<br><small>Adds shine and protection.</small></span>
             </div>
 
             <label>Date</label>
-            <input type="date" id="date">
+            <input type="date" id="date" name="Preferred Date">
 
             <label>Time</label>
-            <input type="time" id="time">
+            <input type="time" id="time" name="Preferred Time">
 
             <label>First Name</label>
-            <input type="text" id="firstName" placeholder="First name" required>
+            <input type="text" id="firstName" name="First Name" placeholder="First name" required>
 
             <label>Last Name</label>
-            <input type="text" id="lastName" placeholder="Last name" required>
+            <input type="text" id="lastName" name="Last Name" placeholder="Last name" required>
 
             <label>Phone</label>
-            <input type="tel" id="phone" placeholder="Phone number" required>
+            <input type="tel" id="phone" name="Phone" placeholder="Phone number" required>
 
             <label>Email</label>
-            <input type="email" id="email" placeholder="Email address" required>
+            <input type="email" id="email" name="Email" placeholder="Email address" required>
 
             <label>Address</label>
-            <input type="text" id="address" placeholder="Service address" required>
+            <input type="text" id="address" name="Service Address" placeholder="Service address" required>
 
             <label>Payment Method</label>
-            <select id="payment">
+            <select id="payment" name="Payment Method">
               <option>PayPal</option>
               <option>Venmo</option>
               <option>Cash App</option>
@@ -350,10 +350,15 @@
             </select>
 
             <label>Extra Notes</label>
-            <textarea id="notes" placeholder="Tell us about your vehicle..."></textarea>
+            <textarea id="notes" name="Extra Notes" placeholder="Tell us about your vehicle..."></textarea>
+
+
+            <input type="hidden" id="hiddenTotal" name="Estimated Total">
+            <input type="hidden" id="hiddenDuration" name="Estimated Duration">
+            <input type="hidden" id="hiddenAddonTotal" name="Add-On Total">
+            <input type="hidden" name="_subject" value="New Detailing Booking Request">
 
             <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: 15px;">Request Booking</button>
-            <p id="bookingMessage" style="color: var(--success); font-weight: 800;"></p>
           </form>
         </div>
       </div>
@@ -383,18 +388,18 @@
         </div>
 
         <div>
-          <form class="quote-card" onsubmit="sendContact(event)">
+          <form class="quote-card" action="https://formspree.io/f/mlgzbdlp" method="POST">
             <label>Name</label>
-            <input type="text" placeholder="Name" required>
+            <input type="text" name="Contact Name" placeholder="Name" required>
 
             <label>Email</label>
-            <input type="email" placeholder="Email" required>
+            <input type="email" name="Contact Email" placeholder="Email" required>
 
             <label>Message</label>
-            <textarea placeholder="How can we help?" required></textarea>
+            <textarea name="Contact Message" placeholder="How can we help?" required></textarea>
+            <input type="hidden" name="_subject" value="New Website Contact Message">
 
             <button class="btn btn-primary" type="submit">Send Message</button>
-            <p id="contactMessage" style="color: var(--success); font-weight: 800;"></p>
           </form>
 
           <div class="map" style="margin-top: 18px;">
