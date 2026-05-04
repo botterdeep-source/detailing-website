@@ -584,3 +584,34 @@
   align-items: center;
   justify-content: center;
 }
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-icon {
+  width: 54px;
+  height: 54px;
+  background: rgba(49, 92, 255, 0.12);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-line strong {
+  display: block;
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.contact-line p {
+  margin: 0;
+  color: white;
+  font-size: 19px;
+  font-weight: 800;
+}
