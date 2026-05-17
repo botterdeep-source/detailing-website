@@ -224,6 +224,10 @@ h2 span {
   color: var(--blue2);
 }
 
+.green-text {
+  color: #36c96f;
+}
+
 /* About */
 
 .about-grid {
