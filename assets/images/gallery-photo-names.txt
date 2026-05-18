@@ -1,0 +1,25 @@
+Add your photos with these exact file names:
+
+Detailing:
+detailng-before-1.jpg
+detailng-after-1.jpg
+detailng-before-2.jpg
+detailng-after-2.jpg
+detailng-before-3.jpg
+detailng-after-3.jpg
+
+Use these exact correct names instead:
+detailing-before-1.jpg
+detailing-after-1.jpg
+detailing-before-2.jpg
+detailing-after-2.jpg
+detailing-before-3.jpg
+detailing-after-3.jpg
+
+Gardening:
+gardening-before-1.jpg
+gardening-after-1.jpg
+gardening-before-2.jpg
+gardening-after-2.jpg
+gardening-before-3.jpg
+gardening-after-3.jpg
