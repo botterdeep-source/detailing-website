@@ -92,6 +92,11 @@ header {
   color: var(--blue2);
 }
 
+Add it **between** `.socials a` and `.socials a:hover`.
+
+Like this:
+
+```css
 .socials {
   display: flex;
   gap: 14px;
@@ -103,6 +108,13 @@ header {
   align-items: center;
   justify-content: center;
   transition: 0.2s;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  filter: drop-shadow(0 0 6px rgba(49, 92, 255, 0.25)) drop-shadow(0 0 6px rgba(66, 145, 1, 0.25));
 }
 
 .socials a:hover {
