@@ -726,3 +726,63 @@ footer {
     padding: 60px 0;
   }
 }
+
+
+/* Final polish updates */
+.logo .green-text {
+  color: var(--green) !important;
+}
+
+.detailing-card {
+  border-color: rgba(77, 124, 255, 0.55);
+}
+
+.detailing-card button,
+.detailing-card a {
+  color: var(--blue2);
+}
+
+.detailing-gallery-item {
+  border-color: rgba(77, 124, 255, 0.55);
+  background: linear-gradient(180deg, rgba(77,124,255,0.12), var(--card));
+}
+
+.contact-icon,
+.green-contact-icon {
+  background: linear-gradient(135deg, var(--blue), var(--green));
+}
+
+.contact-icon svg,
+.green-contact-icon svg {
+  stroke: white;
+}
+
+.socials a svg {
+  filter: drop-shadow(0 0 5px rgba(66,145,1,0.35));
+}
+
+
+/* Final color updates */
+.blue-text {
+  color: var(--blue2) !important;
+}
+
+.logo .blue-text {
+  color: var(--blue2) !important;
+}
+
+.logo .green-text {
+  color: var(--green) !important;
+}
+
+.hero h1 .blue-text {
+  color: var(--blue2) !important;
+}
+
+.hero h1 .green-text {
+  color: var(--green) !important;
+}
+
+.socials svg {
+  filter: drop-shadow(0 0 6px rgba(49, 92, 255, 0.25)) drop-shadow(0 0 6px rgba(66, 145, 1, 0.25));
+}
