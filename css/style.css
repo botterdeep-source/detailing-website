@@ -837,7 +837,7 @@ footer {
 
 .before-after-slider .after-img {
   z-index: 2;
-  clip-path: inset(0 50% 0 0);
+  clip-path: inset(0 0 0 50%);
 }
 
 .before-after-slider::before {
