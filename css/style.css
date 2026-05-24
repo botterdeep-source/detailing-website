@@ -481,6 +481,12 @@ textarea {
   outline: none;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
 textarea {
   min-height: 115px;
   resize: vertical;
