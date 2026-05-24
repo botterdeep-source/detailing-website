@@ -1,30 +1,30 @@
 const packageData = {
   "Basic Package": {
-    price: 60,
-    time: "1.5 hours",
-    includes: ["Exterior hand wash", "Wheels cleaned", "Windows cleaned", "Light interior vacuum"],
+    price: 50,
+    time: "45 minutes",
+    includes: ["Exterior hand wash", "Wheels cleaned", "Windows cleaned"],
     type: "detailing"
   },
   "Basic Interior Package": {
-    price: 75,
-    time: "2 hours",
+    price: 30,
+    time: "30 minutes",
     includes: ["Vacuum", "Dash wipe down", "Cupholders cleaned", "Interior windows"],
     type: "detailing"
   },
   "Deep Clean Package": {
-    price: 120,
-    time: "3 hours",
-    includes: ["Deep vacuum", "Plastic and trim cleaning", "Carpet attention", "Door jambs"],
+    price: 60,
+    time: "1 hour",
+    includes: ["Deep vacuum", "Plastic and trim cleaning", "Steamed Carpets", "Door jambs"],
     type: "detailing"
   },
   "Full Interior Package": {
-    price: 150,
+    price: 90,
     time: "4 hours",
     includes: ["Full interior cleaning", "Seats cleaned", "Carpets cleaned", "Glass cleaned", "Interior dressing"],
     type: "detailing"
   },
   "Premium Package": {
-    price: 220,
+    price: 120,
     time: "5 hours",
     includes: ["Full interior detail", "Exterior wash", "Wheel cleaning", "Wax protection", "Final wipe down"],
     type: "detailing"
@@ -75,11 +75,11 @@ const packageData = {
 
 const vehicleUpcharge = {
   "Sedan": 0,
-  "SUV": 20,
-  "Minivan": 30,
-  "Pickup Truck": 25,
-  "Van": 35,
-  "Full-Size Truck": 35
+  "SUV": 15,
+  "Minivan": 20,
+  "Pickup Truck": 20,
+  "Van": 25,
+  "Full-Size Truck": 30
 };
 
 const gardenSizeUpcharge = {
