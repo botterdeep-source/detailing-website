@@ -14,13 +14,7 @@ const packageData = {
   "Deep Clean Package": {
     price: 60,
     time: "1 hour",
-    includes: ["Deep vacuum", "Plastic and trim cleaning", "Steamed Carpets", "Door jambs"],
-    type: "detailing"
-  },
-  "Full Interior Package": {
-    price: 90,
-    time: "4 hours",
-    includes: ["Full interior cleaning", "Seats cleaned", "Carpets cleaned", "Glass cleaned", "Interior dressing"],
+    includes: ["Deep vacuum", "Plastic and trim cleaning", "Steamed Carpets & Seats", "Door jambs"],
     type: "detailing"
   },
   "Premium Package": {
