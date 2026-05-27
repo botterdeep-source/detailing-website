@@ -187,16 +187,33 @@ function updateGardeningQuote() {
 const reviewForm = document.getElementById("reviewForm");
 
 if (reviewForm) {
-  reviewForm.addEventListener("submit", function(event) {
+  reviewForm.addEventListener("submit", async function(event) {
     event.preventDefault();
 
-    const message = document.getElementById("reviewMessage");
-    message.textContent = "Review submitted. Connect this form to Google Sheets or your review storage when ready.";
+    const data = {
+      name: document.getElementById("reviewName").value,
+      rating: document.getElementById("reviewRating").value,
+      review: document.getElementById("reviewText").value
+    };
 
-    reviewForm.reset();
+    try {
+      await fetch("https://script.google.com/macros/s/AKfycbw2WvOd06XzG1MzKEgfZ1XU2lYsKYJQsREMziQpgxEHTiXevlyz9ws2CxFZI4Br7FNwqA/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      document.getElementById("reviewMessage").textContent = "Review submitted. Thank you!";
+      reviewForm.reset();
+
+    } catch (error) {
+      document.getElementById("reviewMessage").textContent = "Something went wrong. Please try again.";
+    }
   });
 }
-
 
 // Before and after image sliders
 document.querySelectorAll(".before-after-slider").forEach(slider => {
