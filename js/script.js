@@ -65,9 +65,9 @@ const vehicleUpcharge = {
   "Sedan": 0,
   "SUV": 15,
   "Minivan": 20,
-  "Pickup Truck": 20,
+  "Pickup Truck": 25,
   "Van": 25,
-  "Full-Size Truck": 30
+  "Full-Size Truck": 40
 };
 
 const gardenSizeUpcharge = {
