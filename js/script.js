@@ -20,7 +20,7 @@ const packageData = {
   "Premium Package": {
     price: 60,
     time: "5 hours",
-    includes: ["Full interior detail", "Full Exterior wash", "Wheel cleaning", "Wax protection"],
+    includes: ["Full interior detail", "Full Exterior wash", "Wheel cleaning", "Light Wax protection"],
     type: "detailing"
   },
   "Lawn Mowing": {
