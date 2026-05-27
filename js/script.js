@@ -190,28 +190,19 @@ if (reviewForm) {
   reviewForm.addEventListener("submit", async function(event) {
     event.preventDefault();
 
-    const data = {
-      name: document.getElementById("reviewName").value,
-      rating: document.getElementById("reviewRating").value,
-      review: document.getElementById("reviewText").value
-    };
+    const formData = new FormData();
+    formData.append("name", document.getElementById("reviewName").value);
+    formData.append("rating", document.getElementById("reviewRating").value);
+    formData.append("review", document.getElementById("reviewText").value);
 
-    try {
-      await fetch("https://script.google.com/macros/s/AKfycbzV_--eM3NaQjH77sCGpV7GgvdlYgbWpHHM9e8q3mODgQhOnza7E0KZQix2Vhv0Is1exA/exec", {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
+    await fetch("https://script.google.com/macros/s/AKfycbzV_--eM3NaQjH77sCGpV7GgvdlYgbWpHHM9e8q3mODgQhOnza7E0KZQix2Vhv0Is1exA/exec", {
+      method: "POST",
+      mode: "no-cors",
+      body: formData
+    });
 
-      document.getElementById("reviewMessage").textContent = "Review submitted. Thank you!";
-      reviewForm.reset();
-
-    } catch (error) {
-      document.getElementById("reviewMessage").textContent = "Something went wrong. Please try again.";
-    }
+    document.getElementById("reviewMessage").textContent = "Review submitted. Thank you!";
+    reviewForm.reset();
   });
 }
 
