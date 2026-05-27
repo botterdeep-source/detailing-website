@@ -197,7 +197,7 @@ if (reviewForm) {
     };
 
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbz1XaO3hP2b2hyt6SJs3yTQ94cwnfpwocxC69n7FtQFCHukMr5U3b-WGr2Nd9FiZXwriQ/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbzV_--eM3NaQjH77sCGpV7GgvdlYgbWpHHM9e8q3mODgQhOnza7E0KZQix2Vhv0Is1exA/exec", {
         method: "POST",
         mode: "no-cors",
         headers: {
