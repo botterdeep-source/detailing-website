@@ -1,26 +1,20 @@
 const packageData = {
   "Basic Package": {
-    price: 50,
+    price: 60,
     time: "45 minutes",
-    includes: ["Exterior hand wash", "Wheels cleaned", "Windows cleaned"],
+    includes: ["Exterior hand wash", "Wheels cleaned", "Windows cleaned","Interior Wipe Down", "Light Vaccum"],
     type: "detailing"
   },
-  "Basic Interior Package": {
-    price: 30,
-    time: "30 minutes",
-    includes: ["Vacuum", "Dash wipe down", "Cupholders cleaned", "Interior windows"],
-    type: "detailing"
-  },
-  "Deep Clean Package": {
+  "Deep Clean Interior Package": {
     price: 40,
     time: "1 hour",
-    includes: ["Deep vacuum", "Plastic and trim cleaning", "Steamed Carpets & Seats", "Door jambs"],
+    includes: ["Deep vacuum", "Plastic and trim shining", "Steamed Carpets & Seats", "Door jambs"],
     type: "detailing"
   },
   "Premium Package": {
-    price: 60,
+    price: 120,
     time: "5 hours",
-    includes: ["Full interior detail", "Full Exterior wash", "Wheel cleaning", "Light Wax protection"],
+    includes: ["Full Interior detail", "Full Exterior wash", "Wheel cleaning", "Small Stain Removal", "Wax protection"],
     type: "detailing"
   },
   "Lawn Mowing": {
