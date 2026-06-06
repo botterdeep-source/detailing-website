@@ -211,6 +211,9 @@ document.querySelectorAll(".before-after-slider").forEach(slider => {
   const range = slider.querySelector(".slider-range");
   const afterImg = slider.querySelector(".after-img");
 
+  // Skip sliders that don't have both elements
+  if (!range || !afterImg) return;
+
   function updateSlider() {
     const value = range.value;
     afterImg.style.clipPath = `inset(0 0 0 ${value}%)`;
