@@ -922,3 +922,12 @@ footer {
     height: 240px;
   }
 }
+
+/* Disable slider UI for no-slider blocks */
+.no-slider::before,
+.no-slider::after,
+.no-slider .slider-range,
+.no-slider .before-label,
+.no-slider .after-label {
+  display: none !important;
+}
