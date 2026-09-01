@@ -149,3 +149,50 @@ document.querySelectorAll(".before-after-slider").forEach(slider => {
   range.addEventListener("input", updateSlider);
   updateSlider();
 });
+
+function setupGallery(galleryId, paginationId) {
+  const gallery = document.getElementById(galleryId);
+  const pagination = document.getElementById(paginationId);
+
+  if (!gallery || !pagination) return;
+
+  const items = Array.from(gallery.querySelectorAll(".gallery-item"));
+  const itemsPerPage = 6;
+  const totalPages = Math.ceil(items.length / itemsPerPage);
+
+  function showPage(page) {
+    items.forEach((item, index) => {
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+
+      item.style.display =
+        index >= start && index < end ? "" : "none";
+    });
+
+    const buttons = pagination.querySelectorAll("button");
+
+    buttons.forEach((button, index) => {
+      button.classList.toggle("active", index === page - 1);
+    });
+  }
+
+  pagination.innerHTML = "";
+
+  for (let i = 1; i <= totalPages; i++) {
+    const button = document.createElement("button");
+
+    button.type = "button";
+    button.setAttribute("aria-label", `Gallery page ${i}`);
+
+    button.addEventListener("click", () => {
+      showPage(i);
+    });
+
+    pagination.appendChild(button);
+  }
+
+  showPage(1);
+}
+
+setupGallery("detailingGallery", "detailingPagination");
+setupGallery("gardeningGallery", "gardeningPagination");
