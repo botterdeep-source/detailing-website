@@ -693,14 +693,3 @@ footer {
 @media (max-width: 520px) {
   .before-after-slider { height: 240px; }
 }
-
-/* Gallery Load More Styles */
-.hidden-item {
-  display: none !important;
-}
-
-.load-more-container {
-  text-align: center;
-  margin-top: 30px;
-  width: 100%;
-}
