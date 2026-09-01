@@ -15,7 +15,7 @@
   <header>
     <div class="container nav" id="nav">
       <a href="#" class="logo">
-        ROCKAWAY <span class="blue-text">SHINE</span> & <span class="green-text">GARDENING</span>
+        ROCKAWAY <span class="accent-text">SHINE & GARDENING</span>
       </a>
 
       <button class="menu-btn" onclick="toggleMenu()">Menu</button>
@@ -32,11 +32,19 @@
 
       <div class="socials">
         <a href="https://www.instagram.com/rockawayshine" target="_blank" rel="noopener" aria-label="Instagram">
-          <img src="assets/icons/instagram.svg" alt="Instagram logo" class="social-icon">
+          <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
         </a>
 
         <a href="https://www.tiktok.com/@rockawayshine" target="_blank" rel="noopener" aria-label="TikTok">
-          <img src="assets/icons/tiktok.svg" alt="TikTok logo" class="social-icon">
+          <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            <path d="M15 4v12a4 4 0 0 1-4 4"></path>
+            <path d="M15 8a4 4 0 0 0 4 4"></path>
+          </svg>
         </a>
       </div>
     </div>
@@ -47,7 +55,7 @@
       <div class="container">
         <div class="badge">CAR DETAILING & GARDENING • ROCKAWAY, NJ</div>
 
-        <h1>Professional <span class="blue-text">Detailing</span> & <span class="green-text">Gardening</span> in Rockaway</h1>
+        <h1>Professional <span class="accent-text">Detailing & Gardening</span> in Rockaway</h1>
 
         <p>
           Mobile car detailing and local gardening services for Rockaway and nearby areas.
@@ -55,8 +63,7 @@
         </p>
 
         <div class="buttons">
-          <a href="#quote" class="btn btn-primary">Get Detailing Quote</a>
-          <a href="#gardening-quote" class="btn btn-green">Get Gardening Quote</a>
+          <a href="#quote" class="btn btn-primary">Get an Instant Quote</a>
         </div>
       </div>
     </section>
@@ -65,7 +72,7 @@
       <div class="container about-grid">
         <div class="about-text">
           <div class="eyebrow">About Us</div>
-          <h2>Rockaway’s <span>Detailing & <span class="green-text">Gardening</span></span></h2>
+          <h2>Rockaway’s <span class="accent-text">Detailing & Gardening</span></h2>
 
           <p>
             We are a local detailing and gardening business serving Rockaway, NJ and nearby towns.
@@ -109,7 +116,7 @@
       <div class="container">
         <div class="section-title">
           <div class="eyebrow">What We Do</div>
-          <h2>Our <span>Services</span></h2>
+          <h2>Our <span class="accent-text">Services</span></h2>
         </div>
 
         <h3 class="service-group-title">Car Detailing Services</h3>
@@ -140,7 +147,7 @@
           </div>
         </div>
 
-        <h3 class="service-group-title green-title">Gardening Services</h3>
+        <h3 class="service-group-title accent-text" style="margin-top: 40px;">Gardening Services</h3>
 
         <div class="services-grid gardening-grid">
           <div class="service-card gardening-card">
@@ -188,7 +195,7 @@
           <div class="service-card gardening-card">
             <h3>Custom Gardening Quote</h3>
             <p>Need more than one yard service? Tell us what you need.</p>
-            <a href="#gardening-quote">Get Quote</a>
+            <a href="#quote">Get Quote</a>
           </div>
         </div>
       </div>
@@ -198,7 +205,7 @@
       <div class="container">
         <div class="section-title">
           <div class="eyebrow">Our Process</div>
-          <h2>Simple From <span>Start to Finish</span></h2>
+          <h2>Simple From <span class="accent-text">Start to Finish</span></h2>
         </div>
 
         <div class="process-list">
@@ -241,7 +248,7 @@
       <div class="container">
         <div class="section-title">
           <div class="eyebrow">Gallery</div>
-          <h2>Before and <span>After</span></h2>
+          <h2>Before and <span class="accent-text">After</span></h2>
         </div>
 
         <h3 class="service-group-title">Detailing Gallery</h3>
@@ -270,33 +277,9 @@
             <div class="slider-label before-label">Before</div>
             <div class="slider-label after-label">After</div>
           </div>
-
-          <div class="before-after-slider detailing-slider">
-            <img class="before-img" src="assets/images/detailing-before-4.jpg" alt="Detailing before photo 3">
-            <img class="after-img" src="assets/images/detailing-after-4.jpg" alt="Detailing after photo 3">
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
-            <div class="slider-label before-label">Before</div>
-            <div class="slider-label after-label">After</div>
-          </div>
-
-          <div class="before-after-slider detailing-slider no-slider">
-            <img src="assets/images/detailing-benz.jpg" alt="">
-          </div>
-
-          <div class="before-after-slider detailing-slider">
-            <img class="before-img" src="assets/images/detailing-before-5.jpg" alt="Detailing before photo 3">
-            <img class="after-img" src="assets/images/detailing-after-5.jpg" alt="Detailing after photo 3">
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
-            <div class="slider-label before-label">Before</div>
-            <div class="slider-label after-label">After</div>
-          </div>
-
-          <div class="before-after-slider detailing-slider no-slider">
-            <img src="assets/images/detailing-rangr.jpg" alt="">
-          </div>
         </div>
 
-        <h3 class="service-group-title green-title gallery-second-title">Gardening Gallery</h3>
+        <h3 class="service-group-title accent-text gallery-second-title">Gardening Gallery</h3>
 
         <div class="before-after-grid">
           <div class="before-after-slider gardening-slider">
@@ -322,54 +305,6 @@
             <div class="slider-label before-label">Before</div>
             <div class="slider-label after-label">After</div>
           </div>
-
-          <div class="before-after-slider gardening-slider">
-            <img class="before-img" src="assets/images/gardening-before-4.jpg" alt="Gardening before photo 4">
-            <img class="after-img" src="assets/images/gardening-after-4.jpg" alt="Gardening after photo 4">
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
-            <div class="slider-label before-label">Before</div>
-            <div class="slider-label after-label">After</div>
-          </div>
-
-          <div class="before-after-slider gardening-slider">
-            <img class="before-img" src="assets/images/gardening-before-5.jpg" alt="Gardening before photo 5">
-            <img class="after-img" src="assets/images/gardening-after-5.jpg" alt="Gardening after photo 5">
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
-            <div class="slider-label before-label">Before</div>
-            <div class="slider-label after-label">After</div>
-          </div>
-
-          <div class="before-after-slider gardening-slider">
-            <img class="before-img" src="assets/images/gardening-before-6.jpg" alt="Gardening before photo 5">
-            <img class="after-img" src="assets/images/gardening-after-6.jpg" alt="Gardening after photo 5">
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
-            <div class="slider-label before-label">Before</div>
-            <div class="slider-label after-label">After</div>
-          </div>
-
-          <div class="before-after-slider gardening-slider">
-            <img class="before-img" src="assets/images/gardening-before-7.jpg" alt="Gardening before photo 5">
-            <img class="after-img" src="assets/images/gardening-after-7.jpg" alt="Gardening after photo 5">
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
-            <div class="slider-label before-label">Before</div>
-            <div class="slider-label after-label">After</div>
-          </div>
-
-          <div class="before-after-slider gardening-slider">
-            <img class="before-img" src="assets/images/gardening-before-8.jpg" alt="Gardening before photo 5">
-            <img class="after-img" src="assets/images/gardening-after-8.jpg" alt="Gardening after photo 5">
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
-            <div class="slider-label before-label">Before</div>
-            <div class="slider-label after-label">After</div>
-          </div>
-
-          <div class="before-after-slider gardening-slider">
-            <img class="before-img" src="assets/images/gardening-before-9.jpg" alt="Gardening before photo 5">
-            <img class="after-img" src="assets/images/gardening-after-9.jpg" alt="Gardening after photo 5">
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
-            <div class="slider-label before-label">Before</div>
-            <div class="slider-label after-label">After</div>
-          </div>
         </div>
       </div>
     </section>
@@ -378,7 +313,7 @@
       <div class="container">
         <div class="section-title">
           <div class="eyebrow">Reviews</div>
-          <h2>What Customers <span>Say</span></h2>
+          <h2>What Customers <span class="accent-text">Say</span></h2>
         </div>
 
         <div class="reviews-grid">
@@ -389,7 +324,7 @@
           </div>
 
           <div class="review-card">
-            <div class="stars green-stars">★★★★★</div>
+            <div class="stars">★★★★★</div>
             <p>I highly recommend these guys! They did an amazing job. Prompt, efficient, and reasonable pricing. </p>
             <strong>Giselle K.</strong>
           </div>
@@ -398,24 +333,6 @@
             <div class="stars">★★★★★</div>
             <p>A truly hard‑working and highly professional team which is not easy to find these days.</p>
             <strong>Frank</strong>
-          </div>
-
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p>I highly recommend these guys! We were so impressed with their hard work and dedication.</p>
-            <strong>Jamie L.</strong>
-          </div>
-
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p>The team was hard working and went above and beyond to complete the job. They were diligent and cleaned up the area as they worked. I highly recommend!</p>
-            <strong>Cindy M.</strong>
-          </div>
-
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p>Amazing job on my car. It looks like I bought it brand new yesterday. I would highly recommend.</p>
-            <strong>Timothy W.</strong>
           </div>
         </div>
 
@@ -438,7 +355,7 @@
             <label>Review</label>
             <textarea id="reviewText" name="Review Message" placeholder="Write your review..." required></textarea>
 
-            <button class="btn btn-primary" type="submit">Submit Review</button>
+            <button class="btn btn-primary" type="submit" style="margin-top:15px;">Submit Review</button>
             <p id="reviewMessage"></p>
           </form>
         </div>
@@ -448,24 +365,24 @@
     <section id="quote">
       <div class="container">
         <div class="section-title">
-          <div class="eyebrow">Car Detailing Quote</div>
-          <h2>Detailing <span>Instant Quote</span></h2>
+          <div class="eyebrow">Instant Quote</div>
+          <h2>Get Your <span class="accent-text">Estimate</span></h2>
         </div>
 
         <div class="quote-box">
           <div class="quote-card">
-            <h3>Detailing Quote Summary</h3>
-            <p>Pick your vehicle, package, add-ons, date, and payment option.</p>
+            <h3>Quote Summary</h3>
+            <p>Select your service, package, and add-ons to see an estimate.</p>
 
             <div class="summary">
               <div class="summary-row">
-                <span>Vehicle</span>
-                <span id="sumVehicle">Not selected</span>
+                <span>Service Category</span>
+                <span id="sumCategory">Not selected</span>
               </div>
 
               <div class="summary-row">
-                <span>Package</span>
-                <span id="sumPackage">Not selected</span>
+                <span>Selection</span>
+                <span id="sumSelection">Not selected</span>
               </div>
 
               <div class="summary-row">
@@ -474,225 +391,145 @@
               </div>
 
               <div class="summary-row">
-                <span>Duration</span>
-                <span id="sumDuration">0 hrs</span>
-              </div>
-
-              <div class="summary-row">
-                <span>Total</span>
+                <span>Total Estimate</span>
                 <span id="sumTotal">$0</span>
               </div>
             </div>
           </div>
 
           <div class="quote-card">
-            <form action="https://formspree.io/f/mlgzbdlp" method="POST" oninput="updateQuote()" onsubmit="updateQuote()">
-              <label>Vehicle Type</label>
-              <select id="vehicle" name="Vehicle Type" required>
-                <option value="">Select vehicle</option>
-                <option value="Sedan">Sedan</option>
-                <option value="SUV">SUV</option>
-                <option value="Minivan">Minivan</option>
-                <option value="Pickup Truck">Pickup Truck</option>
-                <option value="Van">Van</option>
-                <option value="Full-Size Truck">Full-Size Truck</option>
-              </select>
-
-              <label>Service Package</label>
-              <select id="package" name="Service Package" required>
-                <option value="">Select package</option>
-                <option value="Basic Package">Basic Package</option>
-                <option value="Deep Clean Interior Package">Deep Clean Interior Package</option>
-                <option value="Premium Package">Premium Package</option>
-              </select>
-
-              <label>Add-Ons</label>
-
-              <div class="addon">
-                <input type="checkbox" name="Add Ons" value="Pet Hair Removal" data-price="5">
-                <span>Pet Hair Removal - $5<br><small>Extra removal for seats and carpets.</small></span>
-              </div>
-
-              <div class="addon">
-                <input type="checkbox" name="Add Ons" value="Stain Treatment" data-price="10">
-                <span>Stain Treatment - $10<br><small>Helps clean tougher stains.</small></span>
-              </div>
-
-              <div class="addon">
-                <input type="checkbox" name="Add Ons" value="Engine Bay Detail" data-price="40">
-                <span>Engine Bay Detail - $40<br><small>Brings a new shine to your engine bay.</small></span>
-              </div>
+            <form action="https://formspree.io/f/mlgzbdlp" method="POST" id="unifiedForm" oninput="updateUnifiedQuote()">
               
-              <div class="addon">
-                <input type="checkbox" name="Add Ons" value="Wax Protection" data-price="10">
-                <span>Wax Protection - $10<br><small>Adds shine and protection.</small></span>
-              </div>
-
-              <div class="addon">
-                <input type="checkbox" name="Add Ons" value="Clay Bar" data-price="10">
-                <span>Clay Bar - $10<br><small>Removes extra stuck-on dirt and yellowness.</small></span>
-              </div>
-
-              <label>Date</label>
-              <input type="date" id="date" name="Preferred Date" required>
-
-              <label>Time</label>
-              <input type="time" id="time" name="Preferred Time" required>
-
-              <label>First Name</label>
-              <input type="text" id="firstName" name="First Name" placeholder="First name" required>
-
-              <label>Last Name</label>
-              <input type="text" id="lastName" name="Last Name" placeholder="Last name" required>
-
-              <label>Phone</label>
-              <input type="tel" id="phone" name="Phone" placeholder="Phone number" required>
-
-              <label>Email</label>
-              <input type="email" id="email" name="email" placeholder="Email address" required>
-
-              <label>Address</label>
-              <input type="text" id="address" name="Service Address" placeholder="Service address" required>
-
-              <label>Payment Method</label>
-              <select id="payment" name="Payment Method" required>
-                <option value="">Select payment method</option>
-                <option>PayPal</option>
-                <option>Venmo</option>
-                <option>Cash App</option>
-                <option>Credit or Debit Card</option>
-                <option>Cash</option>
+              <label>What do you need help with?</label>
+              <select id="serviceCategory" name="Service Category" required onchange="toggleFormFields()">
+                <option value="">Select a service category</option>
+                <option value="Auto Detailing">Auto Detailing</option>
+                <option value="Lawn & Gardening">Lawn & Gardening</option>
               </select>
 
-              <label>Extra Notes</label>
-              <textarea id="notes" name="Extra Notes" placeholder="Tell us about your vehicle..."></textarea>
+              <!-- DETAILING FIELDS (Hidden by default) -->
+              <div id="detailingFields" style="display: none;">
+                <label>Vehicle Type</label>
+                <select id="vehicle" name="Vehicle Type" class="detailing-input">
+                  <option value="">Select vehicle</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="SUV">SUV</option>
+                  <option value="Minivan">Minivan</option>
+                  <option value="Pickup Truck">Pickup Truck</option>
+                  <option value="Van">Van</option>
+                  <option value="Full-Size Truck">Full-Size Truck</option>
+                </select>
 
-              <input type="hidden" name="_subject" value="New Detailing Booking Request">
-              <input type="hidden" id="hiddenTotal" name="Estimated Total">
-              <input type="hidden" id="hiddenDuration" name="Estimated Duration">
-              <input type="hidden" id="hiddenAddonTotal" name="Add-On Total">
+                <label>Service Package</label>
+                <select id="package" name="Service Package" class="detailing-input">
+                  <option value="">Select package</option>
+                  <option value="Basic Package">Basic Package</option>
+                  <option value="Deep Clean Interior Package">Deep Clean Interior Package</option>
+                  <option value="Premium Package">Premium Package</option>
+                </select>
 
-              <button class="btn btn-primary full-btn" type="submit">Request Detailing Booking</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="gardening-quote" class="green-quote-section">
-      <div class="container">
-        <div class="section-title">
-          <div class="eyebrow green-eyebrow">Gardening Quote</div>
-          <h2>Gardening <span class="green-text">Instant Quote</span></h2>
-        </div>
-
-        <div class="quote-box">
-          <div class="quote-card green-quote-card">
-            <h3>Gardening Quote Summary</h3>
-            <p>Pick your yard service, yard size, add-ons, date, and payment option.</p>
-
-            <div class="summary green-summary">
-              <div class="summary-row">
-                <span>Yard Size</span>
-                <span id="gardenSumSize">Not selected</span>
+                <label>Detailing Add-Ons</label>
+                <div class="addon">
+                  <input type="checkbox" name="Detailing Add Ons" value="Pet Hair Removal" data-price="5">
+                  <span>Pet Hair Removal - $5<br><small>Extra removal for seats and carpets.</small></span>
+                </div>
+                <div class="addon">
+                  <input type="checkbox" name="Detailing Add Ons" value="Stain Treatment" data-price="10">
+                  <span>Stain Treatment - $10<br><small>Helps clean tougher stains.</small></span>
+                </div>
+                <div class="addon">
+                  <input type="checkbox" name="Detailing Add Ons" value="Engine Bay Detail" data-price="40">
+                  <span>Engine Bay Detail - $40<br><small>Brings a new shine to your engine bay.</small></span>
+                </div>
+                <div class="addon">
+                  <input type="checkbox" name="Detailing Add Ons" value="Wax Protection" data-price="10">
+                  <span>Wax Protection - $10<br><small>Adds shine and protection.</small></span>
+                </div>
+                <div class="addon">
+                  <input type="checkbox" name="Detailing Add Ons" value="Clay Bar" data-price="10">
+                  <span>Clay Bar - $10<br><small>Removes extra stuck-on dirt and yellowness.</small></span>
+                </div>
               </div>
 
-              <div class="summary-row">
-                <span>Service</span>
-                <span id="gardenSumService">Not selected</span>
+              <!-- GARDENING FIELDS (Hidden by default) -->
+              <div id="gardeningFields" style="display: none;">
+                <label>Yard Size</label>
+                <select id="gardenSize" name="Yard Size" class="gardening-input">
+                  <option value="">Select yard size</option>
+                  <option value="Small Yard">Small Yard</option>
+                  <option value="Medium Yard">Medium Yard</option>
+                  <option value="Large Yard">Large Yard</option>
+                  <option value="Extra Large Yard">Extra Large Yard</option>
+                </select>
+
+                <label>Gardening Service</label>
+                <select id="gardenService" name="Gardening Service" class="gardening-input">
+                  <option value="">Select service</option>
+                  <option value="Lawn Mowing">Lawn Mowing</option>
+                  <option value="Mulch Installation">Mulch Installation</option>
+                  <option value="Bush Trimming">Bush Trimming</option>
+                  <option value="Pavement Cleanup">Pavement Cleanup</option>
+                  <option value="Weed Removal">Weed Removal</option>
+                  <option value="String Trimming">String Trimming</option>
+                  <option value="Plant Planting">Plant Planting</option>
+                </select>
+
+                <label>Gardening Add-Ons</label>
+                <div class="addon">
+                  <input type="checkbox" name="Gardening Add Ons" value="Extra Weed Removal" data-price="25">
+                  <span>Extra Weed Removal - $25<br><small>More time for heavy weeds.</small></span>
+                </div>
+                <div class="addon">
+                  <input type="checkbox" name="Gardening Add Ons" value="Extra Bagging" data-price="15">
+                  <span>Extra Bagging - $15<br><small>Bagging grass, weeds, or yard debris.</small></span>
+                </div>
+                <div class="addon">
+                  <input type="checkbox" name="Gardening Add Ons" value="Plant Pickup" data-price="20">
+                  <span>Plant Pickup - $20<br><small>Picking up plants or supplies.</small></span>
+                </div>
               </div>
 
-              <div class="summary-row">
-                <span>Add-ons</span>
-                <span id="gardenSumAddons">$0</span>
+              <!-- SHARED CONTACT FIELDS (Hidden by default) -->
+              <div id="sharedFields" style="display: none;">
+                <label>Date</label>
+                <input type="date" name="Preferred Date" required>
+
+                <label>Time</label>
+                <input type="time" name="Preferred Time" required>
+
+                <label>First Name</label>
+                <input type="text" name="First Name" placeholder="First name" required>
+
+                <label>Last Name</label>
+                <input type="text" name="Last Name" placeholder="Last name" required>
+
+                <label>Phone</label>
+                <input type="tel" name="Phone" placeholder="Phone number" required>
+
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email address" required>
+
+                <label>Address</label>
+                <input type="text" name="Service Address" placeholder="Service address" required>
+
+                <label>Payment Method</label>
+                <select name="Payment Method" required>
+                  <option value="">Select payment method</option>
+                  <option>PayPal</option>
+                  <option>Venmo</option>
+                  <option>Cash App</option>
+                  <option>Credit or Debit Card</option>
+                  <option>Cash</option>
+                </select>
+
+                <label>Extra Notes</label>
+                <textarea name="Extra Notes" placeholder="Tell us more about what you need..."></textarea>
+
+                <input type="hidden" name="_subject" id="formSubject" value="New Booking Request">
+                <input type="hidden" id="hiddenTotal" name="Estimated Total">
+
+                <button class="btn btn-primary full-btn" type="submit">Request Booking</button>
               </div>
-
-              <div class="summary-row">
-                <span>Total</span>
-                <span id="gardenSumTotal">$0</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="quote-card green-quote-card">
-            <form action="https://formspree.io/f/mlgzbdlp" method="POST" oninput="updateGardeningQuote()" onsubmit="updateGardeningQuote()">
-              <label>Yard Size</label>
-              <select id="gardenSize" name="Yard Size" required>
-                <option value="">Select yard size</option>
-                <option value="Small Yard">Small Yard</option>
-                <option value="Medium Yard">Medium Yard</option>
-                <option value="Large Yard">Large Yard</option>
-                <option value="Extra Large Yard">Extra Large Yard</option>
-              </select>
-
-              <label>Gardening Service</label>
-              <select id="gardenService" name="Gardening Service" required>
-                <option value="">Select service</option>
-                <option value="Lawn Mowing">Lawn Mowing</option>
-                <option value="Mulch Installation">Mulch Installation</option>
-                <option value="Bush Trimming">Bush Trimming</option>
-                <option value="Pavement Cleanup">Pavement Cleanup</option>
-                <option value="Weed Removal">Weed Removal</option>
-                <option value="String Trimming">String Trimming</option>
-                <option value="Plant Planting">Plant Planting</option>
-              </select>
-
-              <label>Gardening Add-Ons</label>
-
-              <div class="addon">
-                <input type="checkbox" name="Gardening Add Ons" value="Extra Weed Removal" data-price="25">
-                <span>Extra Weed Removal - $25<br><small>More time for heavy weeds.</small></span>
-              </div>
-
-              <div class="addon">
-                <input type="checkbox" name="Gardening Add Ons" value="Extra Bagging" data-price="15">
-                <span>Extra Bagging - $15<br><small>Bagging grass, weeds, or yard debris.</small></span>
-              </div>
-
-              <div class="addon">
-                <input type="checkbox" name="Gardening Add Ons" value="Plant Pickup" data-price="20">
-                <span>Plant Pickup - $20<br><small>Placeholder price for picking up plants or supplies.</small></span>
-              </div>
-
-              <label>Date</label>
-              <input type="date" id="gardenDate" name="Preferred Date" required>
-
-              <label>Time</label>
-              <input type="time" id="gardenTime" name="Preferred Time" required>
-
-              <label>First Name</label>
-              <input type="text" id="gardenFirstName" name="First Name" placeholder="First name" required>
-
-              <label>Last Name</label>
-              <input type="text" id="gardenLastName" name="Last Name" placeholder="Last name" required>
-
-              <label>Phone</label>
-              <input type="tel" id="gardenPhone" name="Phone" placeholder="Phone number" required>
-
-              <label>Email</label>
-              <input type="email" id="gardenEmail" name="email" placeholder="Email address" required>
-
-              <label>Address</label>
-              <input type="text" id="gardenAddress" name="Service Address" placeholder="Service address" required>
-
-              <label>Payment Method</label>
-              <select id="gardenPayment" name="Payment Method" required>
-                <option value="">Select payment method</option>
-                <option>PayPal</option>
-                <option>Venmo</option>
-                <option>Cash App</option>
-                <option>Credit or Debit Card</option>
-                <option>Cash</option>
-              </select>
-
-              <label>Extra Notes</label>
-              <textarea id="gardenNotes" name="Extra Notes" placeholder="Tell us about your lawn, yard, or garden..."></textarea>
-
-              <input type="hidden" name="_subject" value="New Gardening Booking Request">
-              <input type="hidden" id="gardenHiddenTotal" name="Estimated Total">
-              <input type="hidden" id="gardenHiddenAddonTotal" name="Add-On Total">
-
-              <button class="btn btn-green full-btn" type="submit">Request Gardening Booking</button>
             </form>
           </div>
         </div>
@@ -701,34 +538,30 @@
 
     <section id="contact">
       <div class="container contact-grid">
-
         <div class="contact-info">
           <div class="eyebrow">Contact</div>
-          <h2>Ready for a <span>Clean Ride</span> or <span class="green-text">Fresh Yard?</span></h2>
+          <h2>Ready for a Clean Ride or <span class="accent-text">Fresh Yard?</span></h2>
           <p>Contact us for car detailing and gardening services in Rockaway, NJ and nearby areas.</p>
 
           <div class="contact-line">
             <div class="contact-icon">
-              <svg width="24" height="24" fill="none" stroke="#315cff" stroke-width="2" viewBox="0 0 24 24">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.11 5.18 2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.74a16 16 0 0 0 4.26 4.26l1.28-1.28a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/>
               </svg>
             </div>
-
             <div>
               <strong>Call / Text</strong>
-              <p>(973) 306-4637 <span>(Car Detailing)</span></p>
-              <p>(862) 332-2270 <span>(Gardening)</span></p>
+              <p>(973) 306-4637</p>
             </div>
           </div>
 
           <div class="contact-line">
             <div class="contact-icon">
-              <svg width="24" height="24" fill="none" stroke="#315cff" stroke-width="2" viewBox="0 0 24 24">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <rect x="3" y="5" width="18" height="14" rx="2"/>
                 <path d="M3 7l9 6 9-6"/>
               </svg>
             </div>
-
             <div>
               <strong>Email</strong>
               <p>rockawayshine@yahoo.com</p>
@@ -736,35 +569,18 @@
           </div>
 
           <div class="contact-line">
-            <div class="contact-icon green-contact-icon">
-              <svg width="24" height="24" fill="none" stroke="#429101" stroke-width="2" viewBox="0 0 24 24">
+            <div class="contact-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/>
                 <circle cx="12" cy="10" r="3"/>
               </svg>
             </div>
-
             <div>
               <strong>Service Area</strong>
               <p>Rockaway, Dover, Denville, Morris Plains, Parsippany, Randolph, and nearby towns.</p>
             </div>
           </div>
 
-          <div class="contact-line">
-            <div class="contact-icon green-contact-icon">
-              <svg width="24" height="24" fill="none" stroke="#429101" stroke-width="2" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="9"/>
-                <path d="M12 7v5l3 2"/>
-              </svg>
-            </div>
-
-            <div>
-              <strong>Working Hours</strong>
-              <p>
-                Monday - Friday: 4:00PM - 9:00PM<br>
-                Saturday - Sunday: 7:00AM - 9:00PM
-              <p>
-            </div>
-          </div>
         </div>
 
         <div class="contact-right">
@@ -783,25 +599,13 @@
 
             <input type="hidden" name="_subject" value="New Rockaway Shine & Gardening Contact Message">
 
-            <button class="btn btn-primary" type="submit">Send Message</button>
+            <button class="btn btn-primary" type="submit" style="margin-top:15px;">Send Message</button>
           </form>
 
           <div class="map">
-            <iframe
-              src="https://www.google.com/maps?q=Rockaway,%20NJ&output=embed"
-              width="100%"
-              height="260"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy">
-            </iframe>
+            <iframe src="https://www.google.com/maps?q=Rockaway,%20NJ&output=embed" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
-
-          <p class="service-area-text">
-            Serving Rockaway, Dover, Denville, Morris Plains, Parsippany, Randolph, and nearby towns.
-          </p>
         </div>
-
       </div>
     </section>
   </main>
@@ -813,14 +617,11 @@
   <div class="modal" id="modal">
     <div class="modal-content">
       <button class="close" onclick="closeModal()">&times;</button>
-
       <h2 id="modalTitle">Package</h2>
       <p id="modalPrice"></p>
       <p id="modalTime"></p>
-
       <h3>Included:</h3>
       <ul id="modalIncludes"></ul>
-
       <a href="#quote" class="btn btn-primary" id="modalBookButton" onclick="closeModal()">Book This Package</a>
     </div>
   </div>
