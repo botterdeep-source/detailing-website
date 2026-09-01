@@ -149,3 +149,22 @@ document.querySelectorAll(".before-after-slider").forEach(slider => {
   range.addEventListener("input", updateSlider);
   updateSlider();
 });
+
+function loadMore(gridId, btn) {
+  // Find the grid container
+  const grid = document.getElementById(gridId);
+  
+  // Find all items in this grid that are currently hidden
+  const hiddenItems = grid.querySelectorAll('.hidden-item');
+  
+  // Reveal up to 4 items
+  const itemsToReveal = 4;
+  for (let i = 0; i < itemsToReveal && i < hiddenItems.length; i++) {
+    hiddenItems[i].classList.remove('hidden-item');
+  }
+  
+  // If there are no more hidden items left after this click, hide the button
+  if (grid.querySelectorAll('.hidden-item').length === 0) {
+    btn.style.display = 'none';
+  }
+}
