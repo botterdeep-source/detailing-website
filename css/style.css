@@ -708,18 +708,19 @@ footer {
   padding: 0;
   border: none;
   border-radius: 50%;
-  background: #429101;
+  background: #ffffff;
   cursor: pointer;
   transition: 0.2s ease;
 }
 
 .gallery-pagination button:hover {
   transform: scale(1.2);
+  background: #ffffff;
 }
 
 .gallery-pagination button.active {
+  width: 14px;
+  height: 14px;
   background: #ffffff;
-  border: 3px solid #429101;
-  width: 16px;
-  height: 16px;
+  border: none;
 }
