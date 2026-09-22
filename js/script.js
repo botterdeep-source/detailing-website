@@ -1,6 +1,6 @@
 const packageData = {
   "Basic Package": { price: 60, time: "45 minutes", includes: ["Exterior hand wash", "Wheels cleaned", "Windows cleaned","Interior Wipe Down", "Light Vaccum"], type: "detailing" },
-  "Deep Clean Interior Package": { price: 40, time: "1 hour", includes: ["Deep vacuum", "Plastic and trim shining", "Steamed Carpets & Seats", "Door jambs"], type: "detailing" },
+  "Deep Clean Interior Package": { price: 60, time: "1 hour", includes: ["Deep vacuum", "Plastic and trim shining", "Steamed Carpets & Seats", "Door jambs"], type: "detailing" },
   "Premium Package": { price: 120, time: "1 hour", includes: ["Full Interior detail", "Full Exterior wash", "Wheel cleaning", "Small Stain Removal", "Wax protection"], type: "detailing" },
   "Lawn Mowing": { price: 40, time: "Time varies", includes: ["Basic lawn mowing", "Clean cut finish", "Placeholder pricing until final quote"], type: "gardening" },
   "String Trimming": { price: 25, time: "Time varies", includes: ["Edges around fences and walkways", "Hard-to-reach grass trimming", "Placeholder pricing until final quote"], type: "gardening" },
